@@ -1,0 +1,117 @@
+openapi: 3.0.4
+info:
+  title: Thesaurus
+  description: Thesaurus is a simple tool for getting word synonyms. It returns a list of synonyms.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/thesaurus:
+    get:
+      summary: Get Similar Words
+      description: Thesaurus is a simple tool for getting word synonyms. It returns a list of synonyms.
+      operationId: thesaurus
+      parameters:
+      - name: word
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The word for which you want to get synonyms
+        example: big
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  word: big
+                  similarCount: 50
+                  similarWords:
+                  - large
+                  - ample
+                  - sizable
+                  - sizeable
+                  - astronomic
+                  - astronomical
+                  - galactic
+                  - bigger
+                  - larger
+                  - biggest
+                  - greatest
+                  - largest
+                  - biggish
+                  - largish
+                  - blown-up
+                  - enlarged
+                  - bouffant
+                  - puffy
+                  - bulky
+                  - capacious
+                  - colossal
+                  - prodigious
+                  - stupendous
+                  - cosmic
+                  - deep
+                  - double
+                  - elephantine
+                  - gargantuan
+                  - giant
+                  - jumbo
+                  - enormous
+                  - tremendous
+                  - epic
+                  - heroic
+                  - larger-than-life
+                  - extensive
+                  - extended
+                  - gigantic
+                  - mammoth
+                  - great
+                  - hulking
+                  - hulky
+                  - huge
+                  - immense
+                  - vast
+                  - Brobdingnagian
+                  - humongous
+                  - banging
+                  - thumping
+                  - whopping
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
