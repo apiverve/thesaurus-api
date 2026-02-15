@@ -12,7 +12,6 @@ namespace APIVerve.API.Thesaurus
     {
         /// <summary>
         /// The word for which you want to get synonyms
-        /// Example: big
         /// </summary>
         [JsonProperty("word")]
         public string Word { get; set; }
