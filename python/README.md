@@ -269,8 +269,9 @@ from apiverve_thesaurus.apiClient import ThesaurusAPIClient
 
 api = ThesaurusAPIClient("[YOUR_API_KEY]")
 
+query = { "word": "big" }
+
 try:
-    query = { "word": "big" }
     result = api.execute(query)
     print(result)
 finally:
