@@ -2,8 +2,8 @@ openapi: 3.0.4
 info:
   title: Thesaurus
   description: >-
-    Thesaurus is a simple tool for getting word synonyms. It returns a list of
-    synonyms.
+    Thesaurus finds synonyms and alternative terms for any word. Supply a single
+    target word to receive an array of matching synonyms.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +18,7 @@ servers:
 paths:
   /v1/thesaurus:
     get:
-      summary: Get Similar Words
+      summary: Thesaurus
       description: Get a list of similar words for the specified word
       operationId: thesaurus
       parameters:
