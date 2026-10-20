@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/thesaurus",
-  "version": "1.2.0",
-  "description": "Thesaurus is a simple tool for getting word synonyms. It returns a list of synonyms.",
+  "version": "1.2.2",
+  "description": "Thesaurus finds synonyms and alternative terms for any word. Supply a single target word to receive an array of matching synonyms.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "thesaurus", "thesaurus api", "thesaurus tool", "thesaurus software", "thesaurus service"
+    "thesaurus api", "synonyms api", "synonym api", "free thesaurus api", "word synonyms"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/thesaurus-api/issues"
   },
-  "homepage": "https://thesaurus.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/thesaurus?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
