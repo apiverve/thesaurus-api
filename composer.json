@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/thesaurus",
+    "description": "Thesaurus finds synonyms and alternative terms for any word. Supply a single target word to receive an array of matching synonyms.",
+    "version": "1.2.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "thesaurus",
+        "thesaurus api",
+        "synonyms api",
+        "synonym api",
+        "free thesaurus api",
+        "word synonyms"
+    ],
+    "homepage": "https://apiverve.com/marketplace/thesaurus?utm_source=php&utm_medium=referral&utm_content=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/thesaurus",
+        "source": "https://github.com/apiverve/thesaurus-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Thesaurus\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Thesaurus\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
