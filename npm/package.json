@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/thesaurus",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Thesaurus finds synonyms and alternative terms for any word. Supply a single target word to receive an array of matching synonyms.",
   "main": "index.js",
   "types": "index.d.ts",
